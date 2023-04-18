@@ -49,5 +49,3 @@ void OnStart()
       Print("Open ", request.symbol," LONG"," order #",result.order,": ",result.retcode,", Volume: ",result.volume,", Price: ",DoubleToString(request.price,_Digits));
    
   }
-
- 
