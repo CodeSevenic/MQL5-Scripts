@@ -43,6 +43,8 @@ void OnStart()
       request.magic = MagicNumber;
       request.comment = comment;
       
+      if (UseFillingPolicy == true) request.type_filling = FillingPolicy;
+      
       
       if(!OrderSend(request, result)) 
          // If request was not sent, print error code
